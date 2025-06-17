@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ghannaway Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Admin</h1>
+      <nav>
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#contact.html">Contacts</a></li>
+          <li><a href="#webwhatsapp.com">WhatsApp</a></li>
+          <li><a href="#MyFacebook.com">Facebook</a></li>
+          <li><a href="#MyInstagram.com">Instagram</a></li>
+          <li><a href="#documents.html">My Documentations</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle">🌗</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome back Ghannaway to your Dev Dashboard</h2>
+      <p>Organized, Optimized, Outstanding.</p>
+    </div>
+  </section>
+
+  <section class="controls">
+    <div class="container">
+      <input type="text" id="search" placeholder="Search projects..." />
+      <div class="tags">
+        <button class="tag" data-tag="all">All</button>
+        <button class="tag" data-tag="Complete">Completed</button>
+        <button class="tag" data-tag="Incomplete...">Incomplete</button>
+        <button class="tag" data-tag="HTML">HTML</button>
+        <button class="tag" data-tag="CSS">CSS</button>
+        <button class="tag" data-tag="JavaScript">JavaScript</button>
+        <button class="tag" data-tag="React">React</button>
+        <button class="tag" data-tag="Node">Node</button>
+        <button class="tag" data-tag="Googlesheets">Googlesheets</button>
+        <button class="tag" data-tag="Python">Python</button>
+        <button class="tag" data-tag="Json">Json</button>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects" style="
+		background: repeating-linear-gradient(45deg, #ffe000, #00431b 100px);
+   ">
+    <div class="container">
+      <div class="project-grid"></div>
+    </div>
+  </section>
+
+  <section id="tools" class="tools">
+    <div class="container">
+      <h2>Developer Tools</h2>
+      <div class="tool-grid">
+        <a href="https://github.com/GHANNAWAY-TECH" target="_blank" class="tool-card">GitHub</a>
+        <a href="https://codepen.io" target="_blank" class="tool-card">CodePen</a>
+        <a href="https://stackoverflow.com" target="_blank" class="tool-card">Stack Overflow</a>
+        <a href="https://npmjs.com" target="_blank" class="tool-card">NPM</a>
+        <a href="https://devdocs.io" target="_blank" class="tool-card">DevDocs</a>
+        <button onclick="copyToClipboard('ghannawaytechsystem@gmail.com')" class="tool-card">📋 Copy Email</button>
+        <button onclick="copyToClipboard('437639170974-godbkseluvjbs3ob')" class="tool-card">📋 Copy Public Key</button> 
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="container">
+      <p>© 2025 My Dev Dashboard@Ghannaway Tech Systems. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Back to Top">⬆️</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
