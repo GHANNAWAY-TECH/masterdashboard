@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, input, button {
+  font-family: 'Segoe UI', sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+header {
+  background: #222;
+  color: white;
+  padding: 1em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#themeToggle {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin-left: 1em;
+  color: white;
+}
+
+.hero {
+  background: linear-gradient(to right, #040043, #074100);
+  color: #ffffff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.controls {
+  padding: 20px 0;
+  background: #000425;
+}
+
+.controls input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  padding: 5px 10px;
+  background: #ddd;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tag.active {
+  background: #00c6ff;
+  color: white;
+}
+
+.projects {
+  padding: 60px 0;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  background: #b6b0ffe0;
+  padding: 20px;
+  border-radius: 8px;
+  width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  margin-bottom: 10px;
+}
+
+.project-card .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.project-card .tag {
+  background: #ffed00e8;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.8em;
+}
+
+.tools {
+  padding: 60px 0;
+  background: linear-gradient(358deg, black, #db0000);
+  text-align: center;
+}
+
+.tool-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.tool-card {
+  background: #eee;
+  padding: 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  width: 200px;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.tool-card:hover {
+  background: #ddd;
+  cursor: pointer;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  background: #abaae280;
+  color: white;
+  border: none;
+  padding: 14px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0px 0px 12px 9px #f3d90169;
+}
+
+#backToTop:hover {
+  background: #fddf00;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #eee;
+}
+
+body.dark .project-card,
+body.dark header,
+body.dark footer,
+body.dark .controls,
+body.dark .tag,
+body.dark .tool-card {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+body.dark .tag.active {
+  background-color: #00c6ff;
+  color: #000;
+}
