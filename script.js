@@ -1,15 +1,15 @@
 const projects = [
   {
-    title: "Restaurant Web Menu",
-    description: "A profesional webpage Digital menu which updates products, categories, prices and images in real-time with an exel sheet as a server front-end. Built with HTML, CSS, JavaScript and Googlesheets.",
-    tags: ["Complete", "HTML", "CSS", "JavaScript","Googlesheets"],
-    link: "digital menu/new menu V1.0.1.html"
-  },
-    {
     title: "My profile",
     description: "A designed profile with dark and light theme HTML, CSS and JavaScript.",
     tags: ["complete", "HTML", "CSS", "JavaScript", "Json"],
-    link: "james/ghannaway/profile.html"
+    link: "https://ghannaway-tech.github.io/Restaurant-menu/green_theme/profile/profile.html"
+  },
+  {
+    title: "Restaurant Web Menu",
+    description: "A profesional webpage Digital menu which updates products, categories, prices and images in real-time with an exel sheet as a server front-end. Built with HTML, CSS, JavaScript and Googlesheets.",
+    tags: ["Complete", "HTML", "CSS", "JavaScript","Googlesheets"],
+    link: "https://ghannaway-tech.github.io/Restaurant-menu/green_theme/"
   },
   {
     title: "Restaurant Pos",
@@ -21,25 +21,25 @@ const projects = [
     title: "Restaurant Order-Web Menu",
     description: "A profesional webpage menu derived from Restaurant Web Menu with an exel sheet as a server front-end works with real-time ordering from a local network of the Restaurant. Built with HTML, CSS, JavaScript and Googlesheets.",
     tags: ["Incomplete...", "HTML", "CSS", "JavaScript","Googlesheets"],
-    link: "order-restaurant/order_restaurant_menu.html"
+    link: "index.html"
   },
   {
-    title: "Portfolio Website",
-    description: "A personal portfolio website built with HTML, CSS, and JavaScript.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    link: "james/index.html"
+    title: "Movers Website",
+    description: "A small movers website built with HTML, CSS, and JavaScript.",
+    tags: ["Incomplete...", "HTML", "CSS", "JavaScript"],
+    link: "https://ghannaway-tech.github.io/mikesdemoweb/"
   },
   {
     title: "FAQ template",
     description: "A personal FAQ template built with HTML, CSS, and JavaScript.",
     tags: ["Complete", "HTML", "CSS", "JavaScript"],
-    link: "FAQ/FAQ.html"
+    link: "index.html"
   },
   {
     title: "QR Code generator",
     description: "A personal QR-Code generator built with HTML, CSS, and JavaScript.",
     tags: ["Complete", "HTML", "CSS", "JavaScript"],
-    link: "QRcode_generator/QR Code generator.html"
+    link: "#"
   },
   {
     title: "React Todo App",
@@ -51,7 +51,7 @@ const projects = [
     title: "Quotation center",
     description: "A PDF Quotation creater build with JavaScript, HTML and CSS.",
     tags: ["Incomplete...", "HTML", "CSS", "JavaScript"],
-    link: "quotation/quotationcenter.html"
+    link: "#"
   },
   {
     title: "Node API",
@@ -129,3 +129,4 @@ backToTopBtn.addEventListener('click', () => {
 // Initialize
 document.querySelector('.tag[data-tag="all"]').classList.add('active');
 displayProjects(projects);
+
